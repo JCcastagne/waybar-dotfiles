@@ -1,0 +1,30 @@
+@define-color bg-blur rgba(44, 44, 58, 0.32);
+@define-color primary-container #bd2d77;
+@define-color secondary-container #ffa3c7;
+@define-color text-on-primary #ffe2ea;
+@define-color text-on-secondary #7b3454;
+@define-color surface-dim #ebd4da;
+@define-color surface-dim-transparent rgba(235, 212, 218, 0.32);
+
+* {
+    font-family: 'Inter';
+    font-size: 16px;
+    color: white;
+}
+
+
+window#waybar {
+    background: none;
+}
+
+.modules-left,
+.modules-center,
+.modules-right{
+    padding: 2px 16px;
+    background-color: @surface-dim-transparent;
+    border-color: @surface-dim;
+    border: 0.8px solid;
+    border-right: 0;
+    border-bottom: 0;
+    border-radius: 16px;
+}
